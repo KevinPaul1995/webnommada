@@ -1,0 +1,60 @@
+
+/* Estilos para la sección "Sobre Nosotros" */
+.about-us {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem 2rem;
+    background-color: var(--black); /* Fondo negro */
+    border-radius: 8px;
+    margin: 2rem 0;
+}
+
+.about-us-content {
+    flex: 1;
+    padding-right: 2rem;
+    color: var(--white); /* Texto blanco */
+}
+
+.about-us-content h2 {
+    color: var(--white); /* Texto blanco */
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.about-us-content p {
+    color: var(--white); /* Texto blanco */
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.about-us-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-us-image img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Ajustes para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+    .about-us {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-us-content {
+        padding-right: 0;
+        margin-bottom: 2rem;
+    }
+
+    .about-us-image img {
+        width: 80%;
+    }
+}

@@ -1,0 +1,72 @@
+/* Variables globales para los colores principales */
+:root {
+    --black: #000000;  /* Color negro para elementos principales */
+    --primary-color: #13011a;  /* Color negro para elementos principales */
+    --accent-color: #007bff;   /* Color azul para acentos y hover */
+    --white: #ffffff;          /* Color blanco para fondos y texto */
+    --light-gray: #dcd8d8;     /* Color gris claro para el header */
+    --dark-gray: #7f7d7d;      /* Color gris oscuro para enlaces de navegación */
+    --red: #ff0000;            /* Color rojo para el texto */
+}
+
+/* Estilos base del cuerpo del documento */
+body {
+    font-family: 'Montserrat', sans-serif;  /* Fuente principal */
+    margin: 0;
+    padding: 0;
+    color: var(--primary-color);
+    line-height: 1.6;         /* Espaciado entre líneas para mejor legibilidad */
+    overflow-x: hidden;  /* Prevenir scroll horizontal */
+    width: 100%;
+    position: relative;
+}
+
+
+/* Estilos generales de sección */
+section {
+    padding: 4rem 2rem;
+    margin: 0 auto;
+}
+
+/* Grid de servicios */
+.services {
+    background: var(--white);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+}
+
+/* Tarjetas de servicio */
+.service-card {
+    background: var(--white);
+    border: 1px solid var(--primary-color);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+/* Efecto hover en tarjetas */
+.service-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-color);
+}
+
+/* Pie de página */
+footer {
+    background: var(--primary-color);
+    border-top: 3px solid var(--accent-color);
+    color: var(--white);
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Ajustes para pantallas pequeñas */
+@media screen and (max-width: 480px) {
+    .services {
+        grid-template-columns: 1fr;  /* Una columna en móviles */
+    }
+}
+
+

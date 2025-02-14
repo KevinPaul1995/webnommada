@@ -1,0 +1,52 @@
+/* Grid de servicios */
+.services {
+    background: var(--white);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    justify-content: center; /* Centrar las tarjetas en la fila */
+}
+
+/* Tarjetas de servicio */
+.service-card {
+    background: var(--white);
+    border: 1px solid var(--primary-color);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.9s;
+    position: relative;
+    overflow: hidden;
+    height: 500px; /* Aumentar la altura de las tarjetas */
+    width: 330px; /* Hacer las tarjetas más angostas */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0; /* Eliminar padding para que la imagen ocupe todo el ancho */
+}
+
+/* Estilos para las imágenes dentro de las tarjetas de servicio */
+.service-card img {
+    width: 100%;
+    height: 60%; /* Ocupa el 60% de la altura de la tarjeta */
+    object-fit: cover; /* Asegura que la imagen cubra el área sin distorsión */
+    border-radius: 8px 8px 0 0; /* Bordes redondeados en la parte superior */
+}
+
+/* Estilos para el título y subtítulo */
+.service-card h3 {
+    margin: 1rem; /* Añadir margen para separar del borde */
+    color: var(--primary-color);
+}
+
+.service-card p {
+    margin: 0 1rem 1rem; /* Añadir margen para separar del borde */
+    color: var(--dark-gray);
+    font-size: 0.875rem; /* Reducir el tamaño del subtítulo */
+}
+
+/* Efecto hover en tarjetas */
+.service-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-color);
+}

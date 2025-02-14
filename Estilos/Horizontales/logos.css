@@ -1,0 +1,16 @@
+/* Estilos para la sección de logos */
+.logos {
+    display: flex;
+    justify-content: space-around;  /* Distribuir los logos en todo el ancho */
+    align-items: center;
+    gap: 2rem;
+    padding: 0.5rem ;
+    background-color: var(--black);
+    width: 100%;  /* Asegurar que ocupe todo el ancho */
+    box-sizing: border-box;  /* Incluir padding y border en el ancho total */
+}
+
+.logo-item img {
+    height:2.5rem;
+    width: auto;
+}

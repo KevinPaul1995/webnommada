@@ -1,0 +1,47 @@
+
+/* Estilos para la imagen de fondo con degradado */
+.hero-image {
+    position: relative;
+    width: 100%;
+    height: 90vh;  /* Altura para pantallas verticales */
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hero-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(4, 46, 82, 0.419),rgba(0, 0, 0, 1));  /* Degradado */
+    z-index: 1;
+}   
+
+/* Estilos para el texto sobre la imagen */
+.hero-text {
+    position: absolute;
+    top: 60%;  /* Ajustar para que quede más abajo del centro */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--white);  /* Cambiar color a blanco */
+    text-align: center;
+    z-index: 2;
+}
+
+.hero-text h2 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.hero-text p {
+    font-size: 1.25rem;
+    margin: 0.5rem 0 0;
+}
+
